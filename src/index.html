@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEUGLAS - Profil Perusahaan Fashion</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="#page-home" class="nav-link">DEUGLAS</a>
+                </div>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#shop" class="nav-link">Shop</a></li>
+                        <li><a href="#sale" class="nav-link">On Sale</a></li>
+                        <li><a href="#new" class="nav-link">New Arrivals</a></li>
+                        <li><a href="#brands" class="nav-link">Brands</a></li>
+                        <li><a href="#page-about" class="nav-link">Tentang Kami</a></li>
+                        <li><a href="#page-contact" class="nav-link">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-center">
+                <div class="search-bar">
+                    <img src="../Images/search.png" alt="Search Icon" class="search-icon">
+                    <input type="text" placeholder="Search for products...">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <a href="#profile" class="header-icon-link">
+                    <img src="../Images/profile.png" alt="Profile" class="header-icon">
+                </a>
+                <a href="#cart" class="header-icon-link">
+                    <img src="../Images/shop.png" alt="Cart" class="header-icon">
+                </a>
+
+                <div class="mobile-nav-toggle" id="mobile-menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="mobile-nav" id="mobile-menu">
+            <!-- Search Bar (Mobile) -->
+            <div class="search-bar-mobile">
+                <img src="../Images/search.png" alt="Search Icon" class="search-icon">
+                <input type="text" placeholder="Search for products...">
+            </div>
+            <ul>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#sale" class="nav-link">On Sale</a></li>
+                <li><a href="#new" class="nav-link">New Arrivals</a></li>
+                <li><a href="#brands" class="nav-link">Brands</a></li>
+                <li><a href="#page-about" class="nav-link">Tentang Kami</a></li>
+                <li><a href="#page-contact" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="page-home" class="page-content active">
+            
+            <section class="hero">
+                <img src="../Images/background1.png" 
+                     alt="Model fashion mengenakan pakaian DEUGLAS" 
+                     class="hero-bg-image">
+                
+                <div class="hero-content"> 
+                    <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                    <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+                    <a href="#shop" class="hero-button nav-link">Shop Now</a>
+                    
+                    <!-- Statistik Hero -->
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <h4>200+</h4>
+                            <p>International Brands</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h4>2,000+</h4>
+                            <p>High-Quality Products</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h4>30,000+</h4>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="partners">
+                <div class="partners-grid">
+                    <img src="../Images/versace.png" alt="Versace Logo">
+                    <img src="../Images/zara.png" alt="Zara Logo">
+                    <img src="../Images/gucci.png" alt="Gucci Logo">
+                    <img src="../Images/prada.png" alt="Prada Logo">
+                    <img src="../Images/calvinklein.png" alt="Calvin Klein Logo">
+                </div>
+            </section>
+
+            <section class="new-arrivals">
+                <h2 class="section-title">NEW ARRIVALS</h2>
+                <div class="product-grid">
+                    <!-- Produk 1 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img src="../Images/shirt1.png" alt="Product Image">
+                        </div>
+                        <div class="product-card-info">
+                            <h3>T-shirt with Tape Details</h3>
+                            <div class="price">
+                                $120 <span class="price-old">$150</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 2 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                             <img src="../Images/shirt2.png" alt="Product Image">
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Skinny Fit Jeans</h3>
+                            <div class="price">
+                                $240 <span class="price-old">$260</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 3 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                             <img src="../Images/shirt3.png" alt="Product Image">
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Checkered Shirt</h3>
+                            <div class="price">
+                                $180
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 4 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                             <img src="../Images/shirt4.png" alt="Product Image">
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Stripe T-Shirt</h3>
+                            <div class="price">
+                                $130 <span class="price-old">$160</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Top Selling Section -->
+            <section class="top-selling">
+                <h2 class="section-title">TOP SELLING</h2>
+                <div class="product-grid">
+                    <!-- Produk 1 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img src="../Images/Frame 32.png" alt="Product Image">
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Vertical Striped Shirt</h3>
+                            <div class="price">
+                                $212 <span class="price-old">$232</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 2 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                             <img src="../Images/Frame 33.png" alt="Product Image">
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Orange Graphics T-shirt</h3>
+                            <div class="price">
+                                $165
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 3 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                             <img src="../Images/Frame 34.png" alt="Product Image">
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Denim Shorts</h3>
+                            <div class="price">
+                                $180
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 4 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                             <img src="../Images/Frame 38.png" alt="Product Image">
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Faded Skinny Jeans</h3>
+                            <div class="price">
+                                $210
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <!-- Browse by Dress Style Section -->
+            <section class="dress-style">
+                <h2 class="section-title">BROWSE BY DRESS STYLE</h2>
+                <div class="style-grid">
+                    <!-- Style 1 -->
+                    <a href="#" class="style-card">
+                        <img src="../Images/image 11.png" alt="Casual Style">
+                        <div class="style-overlay"></div>
+                        <h3>Casual</h3>
+                    </a>
+                    <!-- Style 2 -->
+                    <a href="#" class="style-card">
+                        <img src="../Images/image 12.png" alt="Formal Style">
+                        <div class="style-overlay"></div>
+                        <h3>Formal</h3>
+                    </a>
+                    <!-- Style 3 -->
+                    <a href="#" class="style-card">
+                        <img src="../Images/image 13.png" alt="Party Style">
+                        <div class="style-overlay"></div>
+                        <h3>Party</h3>
+                    </a>
+                    <!-- Style 4 -->
+                    <a href="#" class="style-card">
+                        <img src="../Images/image 14.png" alt="Gym Style">
+                        <div class="style-overlay"></div>
+                        <h3>Gym</h3>
+                    </a>
+                </div>
+            </section>
+
+            <section class="testimonials-grid-section">
+                <h2 class="section-title">OUR HAPPY CUSTOMERS</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"Saya sangat puas dengan kualitas pakaian dari DEUGLAS! Bahannya nyaman dan desainnya sangat modern. Pengiriman juga cepat. Pasti akan order lagi!"</p>
+                        <p class="testimonial-author">- Sarah M.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"Koleksi jeans-nya luar biasa. Saya kesulitan mencari ukuran yang pas, tapi di sini saya menemukannya. Pelayanannya ramah dan sangat membantu."</p>
+                        <p class="testimonial-author">- Budi K.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"Awalnya ragu beli online, tapi DEUGLAS membuktikan kualitasnya. Jaket yang saya beli persis seperti di foto. Sangat direkomendasikan!"</p>
+                        <p class="testimonial-author">- Citra L.</p>
+                    </div>
+                </div>
+            </section>
+
+        </section> 
+
+        <section id="page-about" class="page-content">
+            <div class="about-section">
+                <div class="about-image">
+                    <img src="/Images/deuglas.png" alt="Tim DEUGLAS">
+                </div>
+                <div class="about-text">
+                    <h1>Tentang DEUGLAS</h1>
+                    <p>DEUGLAS lahir dari kecintaan terhadap fashion yang otentik dan berkualitas. Kami percaya bahwa pakaian bukan hanya sekadar penutup tubuh, tetapi juga cara untuk mengekspresikan diri.</p>
+                    <p>Didirikan pada tahun 2020, kami berkomitmen untuk menghadirkan koleksi pakaian yang dikurasi secara teliti, menggabungkan tren terkini dengan kenyamanan abadi. Kami bekerja sama dengan perajin lokal dan desainer berbakat untuk menciptakan setiap pakaian dengan detail dan kualitas terbaik.</p>
+                    <h3>Misi Kami</h3>
+                    <p>Menjadi destinasi fashion utama di Indonesia yang menginspirasi setiap individu untuk berani tampil beda dan percaya diri dengan gaya mereka sendiri, sambil mendukung industri kreatif lokal.</p>
+                </div>
+            </div>
+        </section> 
+
+        <section id="page-contact" class="page-content">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <p class="section-subtitle">Punya pertanyaan, kritik, atau saran? Kami siap mendengarkan.</p>
+            
+            <div class="contact-container">
+                
+                <div class="contact-form-wrapper">
+                    <h3>Kirim Pesan Cepat</h3>
+                    <form id="contact-form">
+                        <div class="form-group floating">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nama Anda</label>
+                        </div>
+                        
+                        <div class="form-group floating">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Anda</label>
+                        </div>
+                        
+                        <div class="form-group floating">
+                            <input type="text" id="subject" name="subject">
+                            <label for="subject">Subjek (Opsional)</label>
+                        </div>
+                        
+                        <div class="form-group floating">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Pesan Anda</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    </form>
+                    
+                    <div id="form-message"></div>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <p>Atau hubungi kami langsung melalui salah satu cara di bawah ini selama jam kerja.</p>
+                    
+                    <ul class="info-list">
+                        <li>
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z"/></svg>
+                            </div>
+                            <div class="info-text">
+                                <strong>Email</strong>
+                                <a href="mailto:info@deuglas.com">deuglas@companion.co.id</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/></svg>
+                            </div>
+                            <div class="info-text">
+                                <strong>Telepon</strong>
+                                <span>(011) 13213-2322</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/></svg>
+                            </div>
+                            <div class="info-text">
+                                <strong>Alamat</strong>
+                                <span>Jl.Siguragura No. 12, Malang, Indonesia 12345</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+
+        <section id="shop" class="page-content">
+             <h2 class="section-title">SHOP</h2>
+             <p style="text-align: center;">Halaman Shop sedang dalam pengembangan. Silakan cek kembali nanti. mungkin kalau habis ini niat</p>
+        </section>
+        <section id="sale" class="page-content">
+             <h2 class="section-title">ON SALE</h2>
+             <p style="text-align: center;">Halaman On Sale sedang dalam pengembangan. Silakan cek kembali nanti.</p>
+        </section>
+        <section id="new" class="page-content">
+             <h2 class="section-title">NEW ARRIVALS</h2>
+             <p style="text-align: center;">Halaman New Arrivals sedang dalam pengembangan. Silakan cek kembali nanti.</p>
+        </section>
+        <section id="brands" class="page-content">
+             <h2 class="section-title">BRANDS</h2>
+             <p style="text-align: center;">Halaman Brands sedang dalam pengembangan. Silakan cek kembali nanti.</p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>DEUGLAS</h4>
+                <p>Fashion otentik untuk ekspresi diri Anda. Kualitas dan gaya dalam setiap jahitan.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Toko</h4>
+                <ul>
+                    <li><a href="#new" class="nav-link">New Arrivals</a></li>
+                    <li><a href="#sale" class="nav-link">Top Selling</a></li>
+                    <li><a href="#shop" class="nav-link">Pria</a></li>
+                    <li><a href="#shop" class="nav-link">Wanita</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Bantuan</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Cara Pesan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ikuti Kami</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter (X)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 DEUGLAS. Semua Hak Dilindungi.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
